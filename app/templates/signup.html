@@ -43,14 +43,14 @@
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="text" id="fname" name="fname" class="form-control" pattern="[A-Za-z]{1,20}"
+                    <input type="text" id="fname" name="fname" class="form-control" pattern="[A-Za-z\s\.]{1,100}"
                       title="only alphabets are allowed " />
                     <label class="form-label" for="fname">First name</label>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="text" id="lname" name="lname" class="form-control" pattern="[A-Za-z]{1,20}"
+                    <input type="text" id="lname" name="lname" class="form-control" pattern="[A-Za-z]{1,100}"
                       title="only alphabets are allowed" />
                     <label class="form-label" for="lname">Last name</label>
                   </div>
@@ -65,9 +65,9 @@
 
               <div class="form-outline mb-4">
                 <p>Gender</p>
-                  <input type="radio" id="pmale" name="gender" value="MALE">
+                  <input type="radio" id="pmale" name="gender" value="MALE" required="">
                   <label for="pmale">MALE</label><br>
-                  <input type="radio" id="pfemale" name="gender" value="FEMALE">
+                  <input type="radio" id="pfemale" name="gender" value="FEMALE" required="">
                   <label for="pfemale">FEMALE</label>
                 <br>
 
@@ -76,21 +76,21 @@
               <div class="form-outline mb-4">
 
                 <label for="pno">Phone no: +91</label>
-                <input type="text" id="pno" name="pno" pattern="[0-9]{10}"
+                <input type="text" id="pno" name="pno" pattern="[0-9]{10}" required=""
                   title="10 digit pin code note: only numbers are allowed "><br><br>
               </div>
 
               <div class="form-outline mb-4">
 
                 <label for="adhar">Adhar:</label>
-                <input type="text" id="adhar" name="adhar" pattern="[0-9]{12}"
+                <input type="text" id="adhar" name="adhar" pattern="[0-9]{12}" required=""
                   title="12 digit number note: only numbers are allowed "><br><br>
               </div>
               <div class="form-outline mb-4">
 
                 <label for="birthday">Patient Date Of Birth :</label> <br>
-                <input type="date" id="birthday" name="birthday" placeholder="dd-mm-yyyy" value="" min="1950-01-01"
-                  max="2023-12-31">
+                <input type="date" id="birthday" name="birthday" placeholder="dd-mm-yyyy" required="" value="" min="1920-01-01"
+                  max="1992-12-31">
                
 
               <div class="form-outline mb-4">
